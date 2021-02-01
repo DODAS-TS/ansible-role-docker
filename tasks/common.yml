@@ -26,10 +26,10 @@
   when: ansible_version.minor >= 6
 
 # Required by the Ansible Docker module
-- name: "[Common] Install docker-py dependency"
-  pip:
-    name="{{docker_py_package}}"
-    state=latest
+#- name: "[Common] Install docker-py dependency"
+#  pip:
+#    name="{{docker_py_package}}"
+#    state=latest
   
 
 - name: "[Common] Install Docker CE package"
